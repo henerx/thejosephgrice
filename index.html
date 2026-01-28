@@ -3,160 +3,187 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jaiden Morley | An Extremely Detailed Profile</title>
+  <title>Jaiden Morley</title>
   <style>
+    :root {
+      --bg: #0e0e11;
+      --panel: #16161d;
+      --text: #e6e6eb;
+      --accent: #8b5cf6;
+      --accent-2: #22d3ee;
+    }
+
+    * { box-sizing: border-box; }
+
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(180deg, #0f0f14, #1b1b2a);
-      color: #eaeaf0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 10% 10%, #1a1a28, var(--bg));
+      color: var(--text);
+      line-height: 1.6;
     }
+
     header {
-      padding: 4rem 2rem;
+      padding: 4rem 2rem 6rem;
       text-align: center;
-      background: radial-gradient(circle at top, #2a2a55, #0f0f14);
+      position: relative;
+      overflow: hidden;
     }
+
     header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      letter-spacing: 2px;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      margin: 0;
+      letter-spacing: 0.04em;
     }
+
     header p {
-      font-size: 1.2rem;
-      opacity: 0.85;
+      max-width: 900px;
+      margin: 1.5rem auto 0;
+      opacity: 0.9;
+      font-size: 1.1rem;
     }
-    section {
-      max-width: 1000px;
-      margin: 3rem auto;
-      padding: 0 2rem;
+
+    .glow {
+      color: var(--accent);
+      text-shadow: 0 0 20px rgba(139,92,246,0.5);
     }
-    h2 {
-      font-size: 2rem;
-      border-left: 4px solid #7aa2ff;
-      padding-left: 1rem;
-      margin-bottom: 1rem;
-    }
-    .card {
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 16px;
-      padding: 2rem;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-      margin-bottom: 2rem;
-    }
-    .grid {
+
+    main {
+      max-width: 1200px;
+      margin: -4rem auto 4rem;
+      padding: 0 1.5rem;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
     }
-    .fact {
-      background: rgba(255,255,255,0.06);
-      padding: 1.5rem;
+
+    section {
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0));
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 16px;
+      padding: 1.75rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+
+    section h2 {
+      margin-top: 0;
+      color: var(--accent-2);
+      letter-spacing: 0.08em;
+      font-size: 1.2rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .cat-zone {
+      position: relative;
+      height: 220px;
+      overflow: hidden;
       border-radius: 12px;
+      background: #0b0b12;
     }
-    .gif-container {
-      text-align: center;
-      margin-top: 2rem;
+
+    .cat-zone img {
+      position: absolute;
+      bottom: 10px;
+      left: -260px;
+      width: 240px;
+      animation: cat-walk 8s linear infinite;
+      filter: drop-shadow(0 0 12px rgba(255,255,255,0.25));
     }
-    .gif-container img {
-      max-width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 0 25px rgba(255,255,255,0.15);
+
+    @keyframes cat-walk {
+      0%   { transform: translateX(0) rotate(-2deg); }
+      50%  { transform: translateX(120vw) rotate(2deg); }
+      100% { transform: translateX(0) rotate(-2deg); }
     }
+
     footer {
       text-align: center;
       padding: 2rem;
+      opacity: 0.7;
       font-size: 0.9rem;
-      opacity: 0.6;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Jaiden Morley</h1>
-    <p>A deep dive into the story, traits, and small details that define him</p>
+    <h1>Jaiden <span class="glow">Morley</span></h1>
+    <p>
+      A deliberately over-detailed tribute page. This site documents the imagined
+      presence, habits, and atmosphere surrounding a man named Jaiden Morley,
+      blending biography, aesthetic lore, and internet culture into one continuous
+      scroll.
+    </p>
   </header>
 
-  <section>
-    <h2>Overview</h2>
-    <div class="card">
+  <main>
+    <section>
+      <h2>OVERVIEW</h2>
       <p>
-        Jaiden Morley is presented here as a thoughtful, modern individual shaped by
-        curiosity, persistence, and a quiet sense of humor. This website acts as a
-        detailed archive rather than a highlight reel, focusing on habits, tendencies,
-        and the subtle characteristics that often go unnoticed.
+        Jaiden Morley is presented here as a modern digital-era individual whose
+        identity exists somewhere between factual description and online myth.
+        This page does not aim for minimalism. Instead, it catalogs details,
+        textures, and impressions in excess.
       </p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Personality & Traits</h2>
-    <div class="grid">
-      <div class="fact">
-        <strong>Analytical:</strong>
-        <p>Tends to think situations through carefully, preferring understanding over haste.</p>
-      </div>
-      <div class="fact">
-        <strong>Creative:</strong>
-        <p>Enjoys ideas, visuals, and expression, often mixing logic with imagination.</p>
-      </div>
-      <div class="fact">
-        <strong>Resilient:</strong>
-        <p>When things go wrong, adapts instead of retreating.</p>
-      </div>
-      <div class="fact">
-        <strong>Observant:</strong>
-        <p>Notices small details in people, systems, and environments.</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Daily Rhythm</h2>
-    <div class="card">
       <p>
-        Jaiden's days are rarely identical. Some mornings begin with focus and clarity,
-        others with chaos and distraction. Mondays, in particular, have a reputation for
-        feeling heavier, slower, and emotionally louder than the rest of the week.
+        He is associated with persistence, late nights, screens glowing past
+        reasonable hours, and an appreciation for strange internet artifacts that
+        refuse to fade.
       </p>
-      <div class="gif-container">
-        <p><em>Visual representation of Mondays:</em></p>
-        <!-- Monday Left Me Broken Cat GIF -->
-        <img src="https://media.tenor.com/8gXJ5b4hcH0AAAAC/monday-left-me-broken-cat.gif" alt="Monday left me broken cat gif" />
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <h2>Interests & Focus Areas</h2>
-    <div class="grid">
-      <div class="fact">
-        <p>Technology and digital systems</p>
-      </div>
-      <div class="fact">
-        <p>Creative problem-solving</p>
-      </div>
-      <div class="fact">
-        <p>Humor rooted in irony and timing</p>
-      </div>
-      <div class="fact">
-        <p>Exploring how small changes create large outcomes</p>
-      </div>
-    </div>
-  </section>
+    <section>
+      <h2>PERSONAL TRAITS</h2>
+      <ul>
+        <li>Notably patient when focused on a goal</li>
+        <li>Comfortable with complexity and long explanations</li>
+        <li>Drawn to nostalgic and looping media</li>
+        <li>Operates best with background noise or motion</li>
+        <li>Finds meaning in repetition and routine</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Philosophy</h2>
-    <div class="card">
+    <section>
+      <h2>DIGITAL FOOTPRINT</h2>
       <p>
-        At the core of Jaiden Morley's outlook is the belief that progress is rarely loud.
-        It happens in increments, late nights, quiet decisions, and the willingness to
-        continue even when motivation drops out for a while.
+        Jaiden’s digital presence is defined less by loud announcements and more
+        by quiet consistency. Tabs remain open for days. Projects accumulate
+        layers. Nothing is fully discarded.
       </p>
-    </div>
-  </section>
+      <p>
+        This website mirrors that tendency by layering content instead of
+        simplifying it.
+      </p>
+    </section>
+
+    <section>
+      <h2>MONDAY LEFT ME BROKEN</h2>
+      <p>
+        Below is the iconic cat element. While the image itself is static JPEG
+        data, it is animated across the screen using CSS so it visibly moves.
+      </p>
+      <div class="cat-zone">
+        <img
+          alt="Moving cat"
+          src="data:image/jpeg;base64,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"
+        />
+      </div>
+    </section>
+
+    <section>
+      <h2>FINAL NOTES</h2>
+      <p>
+        This site is intentionally excessive. If something feels like it could be
+        trimmed down, it was likely expanded instead. The motion of the cat is a
+        reminder that even static things can be made to move with enough intent.
+      </p>
+    </section>
+  </main>
 
   <footer>
-    <p>Extremely Detailed Website | Single‑File HTML</p>
+    © Jaiden Morley — Excess preserved by design
   </footer>
 </body>
 </html>
