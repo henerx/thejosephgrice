@@ -2,188 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jaiden Morley</title>
   <style>
-    :root {
-      --bg: #0e0e11;
-      --panel: #16161d;
-      --text: #e6e6eb;
-      --accent: #8b5cf6;
-      --accent-2: #22d3ee;
-    }
-
-    * { box-sizing: border-box; }
-
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background: radial-gradient(1200px 600px at 10% 10%, #1a1a28, var(--bg));
-      color: var(--text);
-      line-height: 1.6;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #eaeaea;
     }
-
     header {
-      padding: 4rem 2rem 6rem;
+      background: linear-gradient(90deg, #1f1f1f, #2a2a2a);
+      padding: 40px;
       text-align: center;
-      position: relative;
-      overflow: hidden;
     }
-
     header h1 {
-      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-size: 3rem;
       margin: 0;
-      letter-spacing: 0.04em;
     }
-
-    header p {
-      max-width: 900px;
-      margin: 1.5rem auto 0;
-      opacity: 0.9;
-      font-size: 1.1rem;
-    }
-
-    .glow {
-      color: var(--accent);
-      text-shadow: 0 0 20px rgba(139,92,246,0.5);
-    }
-
-    main {
-      max-width: 1200px;
-      margin: -4rem auto 4rem;
-      padding: 0 1.5rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-    }
-
     section {
-      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0));
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 16px;
-      padding: 1.75rem;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
     }
-
-    section h2 {
-      margin-top: 0;
-      color: var(--accent-2);
-      letter-spacing: 0.08em;
-      font-size: 1.2rem;
+    h2 {
+      border-bottom: 2px solid #444;
+      padding-bottom: 10px;
     }
-
-    ul {
-      padding-left: 1.2rem;
+    .cat {
+      display: flex;
+      justify-content: center;
+      margin: 40px 0;
     }
-
-    .cat-zone {
-      position: relative;
-      height: 220px;
-      overflow: hidden;
+    .cat img {
+      max-width: 300px;
       border-radius: 12px;
-      background: #0b0b12;
+      box-shadow: 0 0 25px rgba(255,255,255,0.15);
     }
-
-    .cat-zone img {
-      position: absolute;
-      bottom: 10px;
-      left: -260px;
-      width: 240px;
-      animation: cat-walk 8s linear infinite;
-      filter: drop-shadow(0 0 12px rgba(255,255,255,0.25));
-    }
-
-    @keyframes cat-walk {
-      0%   { transform: translateX(0) rotate(-2deg); }
-      50%  { transform: translateX(120vw) rotate(2deg); }
-      100% { transform: translateX(0) rotate(-2deg); }
-    }
-
     footer {
+      background: #1a1a1a;
       text-align: center;
-      padding: 2rem;
-      opacity: 0.7;
+      padding: 20px;
       font-size: 0.9rem;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Jaiden <span class="glow">Morley</span></h1>
-    <p>
-      A deliberately over-detailed tribute page. This site documents the imagined
-      presence, habits, and atmosphere surrounding a man named Jaiden Morley,
-      blending biography, aesthetic lore, and internet culture into one continuous
-      scroll.
-    </p>
-  </header>
 
-  <main>
-    <section>
-      <h2>OVERVIEW</h2>
-      <p>
-        Jaiden Morley is presented here as a modern digital-era individual whose
-        identity exists somewhere between factual description and online myth.
-        This page does not aim for minimalism. Instead, it catalogs details,
-        textures, and impressions in excess.
-      </p>
-      <p>
-        He is associated with persistence, late nights, screens glowing past
-        reasonable hours, and an appreciation for strange internet artifacts that
-        refuse to fade.
-      </p>
-    </section>
+<header>
+  <h1>Jaiden Morley</h1>
+  <p>An Extremely Detailed Internet Presence</p>
+</header>
 
-    <section>
-      <h2>PERSONAL TRAITS</h2>
-      <ul>
-        <li>Notably patient when focused on a goal</li>
-        <li>Comfortable with complexity and long explanations</li>
-        <li>Drawn to nostalgic and looping media</li>
-        <li>Operates best with background noise or motion</li>
-        <li>Finds meaning in repetition and routine</li>
-      </ul>
-    </section>
+<section>
+  <h2>About Jaiden</h2>
+  <p>
+    Jaiden Morley is a figure defined by layered complexity, quiet intensity, and an online footprint that feels both intentional and accidental at the same time. This page exists to document, archive, and present that presence in a single location.
+  </p>
+</section>
 
-    <section>
-      <h2>DIGITAL FOOTPRINT</h2>
-      <p>
-        Jaiden’s digital presence is defined less by loud announcements and more
-        by quiet consistency. Tabs remain open for days. Projects accumulate
-        layers. Nothing is fully discarded.
-      </p>
-      <p>
-        This website mirrors that tendency by layering content instead of
-        simplifying it.
-      </p>
-    </section>
+<section>
+  <h2>Monday Left Me Broken</h2>
+  <p>
+    This image is presented exactly as provided.
+  </p>
+  <div class="cat">
+    <img src="data:image/jpeg;base64,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" alt="Monday left me broken cat" />
+  </div>
+</section>
 
-    <section>
-      <h2>MONDAY LEFT ME BROKEN</h2>
-      <p>
-        Below is the iconic cat element. While the image itself is static JPEG
-        data, it is animated across the screen using CSS so it visibly moves.
-      </p>
-      <div class="cat-zone">
-        <img
-          alt="Moving cat"
-          src="data:image/jpeg;base64,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"
-        />
-      </div>
-    </section>
+<footer>
+  © Jaiden Morley — Archived Presence
+</footer>
 
-    <section>
-      <h2>FINAL NOTES</h2>
-      <p>
-        This site is intentionally excessive. If something feels like it could be
-        trimmed down, it was likely expanded instead. The motion of the cat is a
-        reminder that even static things can be made to move with enough intent.
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    © Jaiden Morley — Excess preserved by design
-  </footer>
 </body>
 </html>
